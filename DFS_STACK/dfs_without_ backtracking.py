@@ -1,9 +1,13 @@
-# 不考虑权重到情况下，用深度优先搜索找出所有A-H的路径，以下实现不带回溯
+# Auth: chuan.chen
+# Date: 2024-8-19
+# Function:
+#  不考虑权重到情况下，用深度优先搜索找出所有A-H的路径，以下实现不带回溯
 
 import sys, os
 sys.path.append(os.path.dirname(os.path.dirname(__file__)))
 
 from node import edges, get_neighbor
+from DFS_STACK.stack import stack
 
     
 '''

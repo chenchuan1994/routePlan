@@ -19,6 +19,11 @@ def get_neighbor(curr):
             neighbors.append(e[1])
     return neighbors
 
+def get_cost(start_node, end_node):
+    for e in edges:
+        if e[0] == start_node and e[1] == end_node:
+            return e[2]
+
 if __name__ == "__main__":
 
     # 设置随机数种子
